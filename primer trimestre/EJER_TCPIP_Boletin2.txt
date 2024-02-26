@@ -1,0 +1,288 @@
+Las siguientes direcciones indica de que clase son y pásalas de binario a decimal
+a) 01000001.00001010.00000010.00000011
+65.10.2.3 CLASE-A [0-127]
+b) 10010110.11010110.10001101.11000101
+150.214.141.197 clase-B [128-191]
+
+2 Dadas las siguientes direcciones de red indica la clase, y su máscara en decimal y en
+binario: 216.89.3.0 198.64.126.0 188.119.0.0 23.0.0.0
+CLASE-C 255.255.255.0
+CLASE-C 255.255.255.0
+CLASE-B 255.255.0.0
+CLASE-A 255.0.0.0
+
+3 Sea la dirección de una red 195.214.141.0, con una máscara de red 255.255.255.0 . Indica
+a que clase pertenece y comprueba cuales de las siguientes direcciones pertenecen a dicha
+red:
+195.214.141.32 Pertenece a la red
+195.214.141.138 Pertenece a la red
+195.214.142.23 No pertenece a la red
+
+
+4 Identifica la clase de dirección a la que pertenecen las siguientes direcciones IP:
+200.58.20.165 CLASE-C
+128.167.23.20 CLASE-B
+16.196.128.50 CLASE-B
+150.156.10.10 CLASE-B [128-191]
+250.10.24.96 CLASE-C [192-223]
+
+
+5 a) Para la IP 195.214.141.197. Indica su máscara de red y la red a la que pertenece.
+MASK 255.255.255.0 RED 195.214.141.197
+		            255.255.255.0
+		           --------------------------
+			195.214.141.0
+
+11000101.11010110. 10001101. 11000111-------I
+11111111.  11111111. 11111111.   00000000      I
+------------------------------------------------------------      I
+11000101.11010110.10001101. 00000000-------I
+
+b) En la red anterior se desea enviar un mensaje a la dirección IP 195.214.141.23, ¿quien
+recibirá el mensaje? 
+La máquina 23 de la red 195.214.141.0
+c) Si la dirección de envío es 195.214.141.255 ¿quien recibirá el mensaje?
+Todas (IP Broadcast (depende de la máscara))
+
+6 Dada la dirección 10.0.1.0 ¿Se trata de una dirección de red, host o broadcast?
+Dirección de un Host de una máquina
+
+7 Para cada una de las siguientes direcciones:
+ninguna ip puede empezar por 0
+CLASE-A [ 0-127 ] 255.0.0.0
+CLASE-B [128-191 ] 255.255.0.0
+CLASE-C [192-223 ] 255.255.255.0
+192.168.130.0 =11000000.10101000.10000010.00000000 Clase-C Red
+135.25.255.255 = 10000111.00011001.11111111.11111111 Clase-B Broadcast
+28.13.0.1 = 00011100.00001101.00000000.00000001 Clase-A Host
+0.0.45.2 = 00000000.00000000.00101101.00000010 Clase-A Host
+28.0.0.0 = 00011100.00000000.00000000.00000000 Clase-A Red
+98.0.0.0 = 01100010.00000000.00000000.00000000 Clase-A Red
+200.3.0.255 = 11001000.00000011.00000000.11111111 Clase-C Broadcast
+160.3.0.0 = 10100000.00000011.00000000.00000000 Clase-B Red
+160.3.0.2 = 10100000.00000011.00000000.00000010 Clase-B Host
+a. Convierte a formato binario
+b. Identifica la clase IP a la que pertenece (A, B ó C)
+c. Identifica si se trata de una dirección de red, de host o de broadcast.
+
+
+8 Suponiendo que nuestro ordenador tiene la dirección IP 190.168.5.65 con máscara
+255.255.0.0.
+Indica a que clase pertenece dicha dirección IP, cual es la dirección de red a la que
+pertenece
+Clase-B 190.160.0.0
+
+9 Indica para las siguientes direcciones IP si son posibles para una máquina, si no lo son
+indica para que son válidas:
+a) 0.0.0.0 no
+b) 155.123.0.0 no | clase-b , no hay maquina, es direccion de red
+c) 0.0.0.35 no | empieza por 0 y una ip no puede empezar por 0
+d) 255.255.255.255 no
+e) 183.20.255.255 no | direccion de brodcast
+
+
+10 Dadas las siguientes direcciones indica su Clase (A, B o C) así como si se trata de
+direcciones de red, de broadcast o de host.
+220.255.255.254 C-C host
+195.195.195.195 C-C 
+192.0.0.255 C-C 
+80.255.255.0 C-A 
+186.255.0.255 C-B 
+155.1.1.0 C-B 
+85.255.255.0 C-A 
+160.0.0.255 C-B 
+
+
+11 a) Supongamos una red con máscara 255.255.0.0, en la que tenemos un ordenador con
+dirección 148.120.33.110, indica en que red se encuentra dicho ordenador.
+148.120.0.0
+b) Comprueba si el siguiente ordenador 148.120.33.89 pertenece a la misma red que el
+anterior.
+pertenece a la red anterior
+c) Comprueba si 148.115.89.3, pertenece a la misma red que la IP del apartado a.
+no pertenece a la red anterior
+
+12 Tenemos la dirección 192.0.0.12/24 ¿Qué representa?
+C-C Host (24 es la mascara/cantidad de unos que tiene la mascara)
+
+13 La IP 1.2.34.5/16 ¿A qué red pertenece? Razona la respuesta.
+Red 1.2 Host 34.5 C-B 2^16-2 |C-C 2^8-2
+
+14 ¿Cuántos equipos puede haber en una red con direcciones de clase A, cuantos de B y
+cuantos de C? Razona la respuesta.
+
+
+15 Para las siguientes direcciones de red indica su rango de direcciones para host y su
+dirección de broadcast.
+195.23.0.0       195.23.255.255
+125.0.0.0         125.255.255.255
+200.200.200.0   200.200.200.255
+
+
+16 a) Si tenemos una red con cinco ordenadores, ¿de qué clase necesitamos las direcciones
+IP? Razona la respuesta.
+
+b) Asigna Ips a los 5 equipos.
+
+
+17 Hemos creado una red Ethernet con 20 ordenadores conectados. Nuestra red está conectada
+a Internet y nos han asignado la siguiente dirección IP 192.168.23.0. Indica la clase de esta
+dirección, ¿permite salida a Internet? Razona la respuesta. Indica el rango de direcciones
+que asignarás a las máquinas de nuestra red.
+Clase-C 198.162 No permite ya que es una direccion privada
+
+18 Si estamos construyendo una red con 400 ordenadores, ¿qué clase de dirección IP
+necesitamos? Indica la clase mínima que necesitamos. Razona la respuesta.
+Necesitamos como minimo una clase B debido a que el número de equipos máximos de la clase C es 254
+
+19 A nuestra empresa le han asignado la dirección 200.162.5.0, ¿cuántos pc’s puede conectar?
+Podrian conectarse como máximo 254 equipos como máximo ya que es una red de clase c
+
+20 Indica para las siguientes IP’s de máquina, sus clases, sus máscaras, sus direcciones de red
+y de broadcast para su red:
+25.69.23.12 Clase-A 255.0.0.0 | 25.255.255.255 | 25.0.0.0
+129.0.0.12 Clase-B 255.255.0.0 | 129.0.255.255
+132.23.0.6 Clase-B 255.255.0.0 | 132.23.255.255 | 132.23.0.0
+191.0.0.1 Clase-B 255.255.0.0 | 191.0.255.255 | 191.0.0.0
+200.0.0.73 Clase C 255.255.255.0 | 200.0.0.255 | 200.0.0.0
+
+
+21 Suponiendo que nuestro ordenador tiene la dirección IP 192.168.5.65 con máscara
+255.255.255.0, indica qué significan las siguientes direcciones especiales:
+0.0.0.0 
+0.0.0.29 Host de la red en la que está
+192.168.67.0 Red
+255.255.255.255 Broadcast local
+192.130.10.255 Broadcast dirigido
+127.0.0.1 Representa la propia máquina
+
+
+22 Tenemos una red Ethernet 196.40.0.0 con tres máquinas A, B y C (.1, .40, .33).
+Dibuja la red e indica las direcciones completas de las máquinas.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+200.40.12.X
+1- clase -> clase C 
+2- dir.real -> 200.40.12.0
+3- identificación de mascara -> 0.0.0.X
+4- brodcast local -> 255.255.255.255
+5- brodcast dirigido -> 200.40.12.255
+6- loopback--> direccion q se usa para enviarse cosas a si mismo -> 127.0.0.1
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+direcciones ip privadas
+
+clase-A 10.0.0.0 - 10.255.255.255
+clase-B 172.16.0.0 - 172.31.255.255
+clase-C 192.168.0.0 - 192.168.255.255 
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+               /----> chequeo nic
+127.0.0.1 {
+               \----> chequeo servidor web
+
+192.168.1.25   \
+	         } 192.168.1.25/24
+255.255.255.0 /
+
+11111111.11111111.11111111.00000000
+
+192.168.1.0-> Dirección de red
+192.168.1.255-> Broadcast dirigido
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ip                      12.    29.   3.   5
+mascara:           255.  255.  0.   0 
+	         \________/\_____/
+		red      maquina
+
+---------------------------------------------------
+
+ip                      12.    29.   3.   5
+mascara:           255.  128.  0.   0 
+	          ---------------------------
+                         12      ?     0    0
+                                   L--> 128= 1000000
+            red = 12.0.0.0
+
+---------------------------------------------------
+
+ip                      12.    140.  3.   5
+mascara:           255.  128.  0.   0 
+	          ---------------------------
+                         12      ?     0    0
+                                   L--> 128= 10000000
+                                   L--> 140= 10001100
+			        ---------------
+			        10000000 = 128
+            red = 12.128.0.0
+            red = 12.0.0.0
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+IP ----> 140.3.0.0
+
+MÁSCARA ----> 255.255.224.0
+		         224-> 11100000 
+
+
+11111111.11111111.111   00000.00000000
+-------------------------------   ------------------------
+             RED                    MÁQUINA
+
+    140.   3.    .    0
+      R     R    I    M
+	      I
+	      L 000 00000
+	         ----- ---------
+                        R      M
+
+---------------------------------------------------------------------------------------------------
+
+IP ----> 14.2.19.191
+
+MÁSCARA ----> 255.255.255.128
+		               128-> 10000000 
+
+
+11111111.11111111.11111111.1    0000000
+-----------------------------------------    --------------
+             RED                         MÁQUINA
+
+    14.    2.   19.    191
+     R     R     R       I
+	      	 I
+	      	 L  1    0111111
+	         	    -----  --------- 	-------------------->  HOST
+                        	     R       M
+
+7 CEROS = RED
+7 UNOS = BROADCAST
+7 UNOS Y CEROS MEZCLADOS = HOST
+---------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

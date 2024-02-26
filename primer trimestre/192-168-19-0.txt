@@ -1,0 +1,17 @@
+192.168.19.0/24
+
+clase c
+
+255.255.255.0
+
+tiene la mascara estandar 
+
+8 bits 
+
+254 equipos ya q 2^8 = 256 y 1 va para todo 0s q no se puede usar y otro para el broadcast, asi q quedan 254 libres
+
+broadcast local = 255.255.255.255
+
+broadcast dirigído = 192.168.19.255
+
+[192.168.19.1-192.168.19.254]

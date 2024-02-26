@@ -1,0 +1,21 @@
+195.168.19.0/26
+
+clase c
+
+255.255.255.11    000000
+----------------------   ------------
+        red	           máquina
+
+255.255.255.192
+
+no tiene la mascara estandar 
+
+6 ultimos bits 
+
+62 equipos ya q 2^6 = 64 y 1 va para todo 0s q no se puede usar y otro para el broadcast, asi q quedan 62 libres
+
+broadcast local = 255.255.255.63 (parte de maquinas todo 1s)
+
+broadcast dirigído = 195.168.19.255
+
+[195.168.19.1 - 195.168.19.62]
