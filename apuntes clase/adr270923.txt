@@ -1,0 +1,17 @@
+- Aplicación: Proporciona la interfaz para que las aplicaciones tengan acceso a la red
+- Presentación: Permite a los clientes usar una sintaxis común
+- Sesión: Asegura una comunicación 
+- Transporte: Proporciona el tipo adecuado de conexión
+- Red: Agrega la dirección y garantiza la entrega en conexiones confiables
+- Vinculo de datos: Prepara los paquetes para su transmisión
+- Física: Envia los paquetes al hardware de red
+
+Aplicación: HTTP, FTP, SMTP, DNS, RIP, SNMP.
+Transporte: TCP, UDP.
+Internet: IP ; ARP, IGMP, ICMP.
+Vínculo: Ethernet, Token king, Frame relay, -.
+
+Emisor 7 I                  3----------3                    ^ 7 R eceptor
+              I                   I router  I                     I
+             1----------------1           1------------------1
+

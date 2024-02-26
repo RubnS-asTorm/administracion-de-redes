@@ -1,0 +1,13 @@
+ftp: aplicacion
+v.92: fisica
+Ldap: sesion y presentacion
+ospf: redes
+
+--------------------------------------------------
+
+1000Base-LX:Fibra Multimodo (MMF) y Fibra Monomodo (SMF).  Láser 1310 nm.  Distancia < 10 km.
+
+40GBase-LR4: fibra optica monomodo
+
+10Base-T: se refiere a la velocidad de transmisión a 10 Mbps. El tipo de transmisión es de banda base o digitalmente interpretada. T significa par trenzado. 10BASE5 se refiere a la velocidad de transmisión a 10 Mbps.
+

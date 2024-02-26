@@ -1,0 +1,49 @@
+-En caso de que se monte una red LAN, por muy pequeña que sea en caso de conectarla a internet pasaría a ser una red WAN con estructura LAN.
+-Esta red LAN, utiliza una red de difusión debido a que es el tipo de tecnología que se utiliza en estas redes ya que la información pasa de equipo a equipo.
+-Generalmente en las empresas se utilizan redes CABLEADAS LAN, por lo que en caso de compatibilidad y de conexión es más óptima.
+-El medio de transmisión de la empresa sería privado, ya que la red tiene propietario y el cableado, equipos.. tienen dueño.
+-Esta red está conectada a un dispositivo central y a cinco equipos, una red entre iguales tendría una capacidad máxima de diez equipos. En estas redes cada usuario debería de ser el encargado del mantenimiento del equipo,
+esto en una empresa es inviable, ya que es muy poco seguro y los usuarios no tienen porqué estar cualificados para mantener los equipos en buen estado por lo que por lo general en empresas utilizar redes cliente-servidor.
+-La topología física será de estrella ya que todos los dispositivos estarian conectados por cable a la central.
+
+-----------------------------------------------------------------------------------
+
+tema 2: arquitecturas de red:
+	- Protocolos: 
+		Ethernet, token ring, fddi, ip, tcp, udp, ftp, http
+
+	- Problemas del diseño de la arquitectura: 
+		Encaminamientos, direccionamiento, acceso al medio, saturación del receptor, mantenimiento del orden, control de errores, multiplexación.
+
+	- Capas o niveles:
+		Con el fin de simplificar la complejidad de cualquier red, las diferentes funciones que realizan y los servicios que proveen, se distribuyen en una serie de capas o niveles. Las capas están jerarquizadas y cada una se construye sobre la anterior. El número de capas, funciones y servicios, depende del tipo de red.
+
+	- Modelo OSI 7 capas
+		En 1984, la ISO presentó una revisión de este modelo y lo llamó modelo de referencia de Interconexión de Sistemas Abiertos (OSI). La revisión de 1984 se ha convertido en un estándar internacional y se utiliza como guía para las redes, pero es un modelo teórico no aceptado totalmente por los fabricantes, solo aceptan lo que les interesa.
+		1. Física 2. Enlace 3. Red 4. Transporte 5. Sesión 6. Presentación 7. Aplicación
+
+			7. El nivel 7, el más alto del modelo OSI, es el nivel de aplicación. Este nivel se relaciona con los servicios que soportan directamente las aplicaciones de usuario, como software para transferencia de archivos, acceso a bases de datos, correo electrónico…
+			6. El nivel 6, el nivel de presentación, define el formato utilizado para el intercambio de datos entre equipos conectados en red.
+			5. El nivel 5, el nivel de sesión, permite que dos aplicaciones en diferentes equipos abran, utilicen y cierren una conexión llamada sesión (una sesión es un diálogo o conversación entre dos estaciones). El nivel de sesión es el responsable de la gestión de este diálogo. Este realiza el reconocimiento de nombres y otras funciones
+			4. El nivel 4, el nivel de transporte. Asegura que la información llegue a su destino. El nivel de transporte garantiza que los paquetes se envíen sin errores, en secuencia, y sin pérdidas o duplicados. El control no es a nivel de bits como en la capa de enlace sino a nivel de paquetes.
+			3. El nivel 3, el nivel de red, es el responsable de proporcionar el camino físico a través del cual irán los datos por los diferentes nodos(es el que elije el camino a seguir, el encaminamiento), lo cual implica el direccionamiento de los mensajes y la traducción de las direcciones y nombres lógicos en direcciones físicas. Es capaz de segmentar los paquetes en trozos más pequeños. También gestiona los problemas de tráfico en la red, como la conmutación y encaminamiento de paquetes y el control de la congestión de los datos.
+			2. El nivel 2, el nivel de enlace de datos, envía tramas de datos desde el nivel de red hacia el nivel físico. En el extremo receptor, el nivel de enlace de datos empaqueta los bits puros del nivel físico en tramas de datos.
+			1. El nivel 1, el más bajo del modelo OSI, es el nivel físico. Este nivel transmite el flujo de bits sobre un medio físico (como el cable de red). El nivel físico está completamente orientado al hardware (se indica el medio de transmisión, los conectores, especificaciones eléctricas, lumínicas y de la codificación).
+		
+	- Encapsulación y demultiplexación
+	
+	- Unidades de datos OSI:
+			APDU----------> 7
+			PPDU----------> 6
+			SPDU----------> 5
+			TPDU----------> 4
+			Paquete-------> 3
+			Trama----------> 2
+			Bit---------------> 1
+
+	- Envio de datos: 
+		Se puede pensar que los datos se envían desde un equipo a otro como una serie continua de unos y ceros. De hecho, los datos se dividen en paquetes pequeños y manejables, cada uno dividido con la información esencial para ir desde el origen hasta el destino. Los paquetes constituyen los bloques básicos de comunicación de datos por la red. Hay dos razones por las que la colocación de grandes bloques de datos en el cable ralentiza la red: 
+		• Las grandes cantidades de datos enviados como un único bloque colapsan la red y hacen imposible la interacción y comunicación apropiada debido a que un equipo está desbordando el cable con datos. 
+		• El impacto de la retransmisión de grandes bloques de datos multiplica el tráfico de la red.
+
+	- . . .
