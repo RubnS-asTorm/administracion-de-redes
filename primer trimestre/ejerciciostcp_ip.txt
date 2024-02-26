@@ -1,0 +1,46 @@
+1.¿Qué es un número de puerto para qué sirve?
+Es lo que se usa para identificar un mensaje específico cuando se le envía a su servidor
+
+2. ¿Por qué dividir un mensaje en paquetes?
+Estos pueden recorrer diversos caminos en caso de congestión.
+
+3. En OSI para pasar de una capa a otra hay pasar por las capas intermedias, ¿en TCP/IP es
+también así? Razona la respuesta.
+no
+
+4. a) ¿Cuál es la diferencia entre una dirección IP de red pública y privada?
+las privadas no salen a internet al contrario que las publicas
+
+b) ¿Cuáles son los rangos de estas IPs privadas?
+10.0.0.0 hasta la 10.255.255.255 , 192.68.0.0 hasta la 198.68.255.255 y 172.16.0.0 hasta 172.16.255.255
+
+5. ¿Qué es y para qué sirve la máscara de red?
+plantilla que indica que parte es red y que parte es máquina
+
+6. Explica que indican los 1s en una máscara.
+los Is indican la parte de red de una máscara
+
+7. ¿Qué es un broadcast?
+mensaje que se envia a todas las maquinas de una red
+
+8. ¿Qué es el loopback?
+dirección especial que los hosts utilizan para dirigir el tráfico hacia ellos mismos
+
+9. ¿Qué es una dirección de interface?
+direccion de la tarjeta de red, indica si tiene o no tarjeta
+
+10. ¿Qué es la red IRIS?
+red española que tiene como objetivo investigar los servicios de red y gestion de IPs
+
+11.Supongamos que un profesor está impartiendo una clase. El sistema formado por el aula y el
+profesor se considera una red de difusión. Dicha red emplea el aire como medio de
+comunicación, siendo este compartido por todos los integrantes de la red. Ponga ejemplos
+de los tres tipos de mensajes estudiados.
+loopback, broadcast, unicast, multicast (grupo de host de una determinada red)
+
+12.Una empresa emplea una red de difusión para comunicar todas las estaciones de sus distintas
+oficinas. En un primer momento la red se configura de tal manera que únicamente se
+transmite tráfico Broadcast. Pasados unos meses el administrador de sistemas comprueba
+que la red funciona muy lenta. ¿A qué puede ser debido? ¿Cómo podría solucionarse?
+-
+- entrar dentro del switch y configurarlo de fprma que no pille mas datos de nadie más y que solo pueda enviar datos
